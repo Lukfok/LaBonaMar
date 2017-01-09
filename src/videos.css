@@ -1,0 +1,102 @@
+.video-general{
+	overflow: hidden;
+        margin-top: 20px;
+}
+
+.video-container{
+	background-color:#302E2F;
+	width: 73.5%;
+	height: 500px;
+	display: block;
+	text-align:center;
+	margin-left:15%;
+	float:left;
+}
+.main-video{
+	width: 80%;
+	background-color: black;
+	height: 64.3%;
+	margin-top: 5.3%;
+	margin-left:10%;
+	overflow: hidden;
+}
+.secondaryVideoContainer{
+	width: 100%;
+    height: 17%;
+    margin-top: 2.5%;
+}
+.secondaryVideoThumbnails{
+	width: 80%;
+	float:left;
+	height: 100%;
+	background-color: black;
+	overflow: hidden;
+
+}
+.wideVideoContainter{
+	width:100000px;
+}
+.secondary-video{
+
+	width:114px;
+	height: 100%;
+	margin-right: 14.3px;
+	margin-left: 14.3px;
+	cursor: pointer;
+	float:left;
+	position: relative;
+}
+.secondary-video2{
+
+	width:20%;
+	height: 100%;
+	margin-right: 2.5%;
+	margin-left: 2.5%;
+	cursor: pointer;
+	float:left;
+	position: relative;
+}
+.videoThumbnail{
+	width: 100%;
+	vertical-align: center;
+}
+.secondary-video-internal{
+	margin-top: 10px;
+}
+.hidden{
+	display: none;
+}
+.nextIconLeft{
+	width: 2.5%;
+    height: 30px;
+    float: left;
+    margin: 17px 27px 27px 27px;
+    /*background-image: url(./img/nextLeft.png);*/
+    background-size: contain;
+    background-repeat: no-repeat;
+    cursor: pointer;
+}
+.nextIconRight{
+	width:2.5%;
+	height: 30px;
+	float:left;
+	margin: 17px 26px 26px 26px;
+	/*background-image: url('./img/nextRight.png');*/
+	background-size: contain;
+	background-repeat: no-repeat;
+	cursor: pointer;
+}
+.LeftRightArrow{
+	font-family: 'Concert One';
+	font-size: 40px;
+	font-weight: 900;
+	color:black;
+	margin:0px;
+	padding-bottom: 4px;
+
+	-webkit-transition: color 1s;
+    -moz-transition:    color 1s;
+    -ms-transition:     color 1s;
+    -o-transition:      color 1s;
+    transition:         color 1s;
+}

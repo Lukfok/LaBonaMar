@@ -1,0 +1,691 @@
+body {
+    margin: 0px;
+    /*background-color: lightgreen; /* Color Primavera */
+    /*background-color: #C06969; /* Color Otoño */
+    /*background-color: #FFFFE0; /* Color Verano */
+    background-color: #FDFDFF; /* Color Invierno */
+    background-image: url("../img/fondovintage1.jpg"); /*Color Otoño */
+    background-size: 1920px 1080px;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.container {
+    width: 1024px;
+    margin: auto;
+}
+
+header {
+    background-color: black/*lightskyblue*/;
+    height: 768px;
+}
+
+section {
+    height: 340px;
+}
+
+/* ------ ALERT ------- */
+
+.alerta {
+    text-align: center;
+    color: #3c763d;
+    background-color: #dff0d8;
+    border-color: #d6e9c6;
+    position: fixed;
+    z-index: 10;
+    width: 1024px;
+    transition: all 0.6s ease-out;
+}
+
+.alert {
+    padding: 10px 0px;
+}
+
+.padding-alert {
+    padding-top: 54px;
+}
+
+.btn-danger {
+    background-color: #d9534f;
+    border-color: #d43f3a;
+}
+
+.btn-danger:hover {
+    background-color: #c9302c;
+    border-color: #ac2925;
+}
+
+.btn-info {
+    background-color: #5bc0de;
+    border-color: #46b8da;
+}
+
+.btn-info:hover {
+    background-color: #31b0d5;
+    border-color: #269abc;
+}
+
+.btn {
+    margin-left: 10px;
+    padding: 6px 20px;
+    font-size: 14px;
+    border: 1px solid transparent;
+    font-family: 'Montserrat', sans-serif;
+    cursor: pointer;
+    color: #fff;
+}
+
+/* ------ MODAL ------ */
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 10; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    -webkit-animation-name: fadeIn; /* Fade in the background */
+    -webkit-animation-duration: 0.4s;
+    animation-name: fadeIn;
+    animation-duration: 0.4s
+}
+
+/* Modal Content */
+.modal-content {
+    position: fixed;
+    bottom: 0;
+    background-color: #fefefe;
+    width: 80%;
+    margin: 10%;
+    -webkit-animation-name: slideIn;
+    -webkit-animation-duration: 0.4s;
+    animation-name: slideIn;
+    animation-duration: 0.4s
+}
+
+/* The Close Button */
+.close {
+    color: white;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.modal-header {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+.modal-body {padding: 2px 16px;}
+
+.modal-footer {
+    padding: 2px 16px;
+    background-color: #5cb85c;
+    color: white;
+}
+
+/* Add Animation */
+@-webkit-keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@keyframes slideIn {
+    from {bottom: -300px; opacity: 0}
+    to {bottom: 0; opacity: 1}
+}
+
+@-webkit-keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+@keyframes fadeIn {
+    from {opacity: 0}
+    to {opacity: 1}
+}
+
+/* ------ SLIDER ------ */
+
+.slider-container {
+    max-width: 1024px;
+    position: relative;
+    margin: auto;
+}
+
+.slider-dot {
+    bottom: 25px;
+    width: 100%;
+    text-align: center;
+    position: absolute;
+}
+
+.dot {
+  cursor: pointer;
+  height: 13px;
+  width: 13px;
+  margin: 0 2px;
+  background-color: #bbb;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active, .dot:hover {
+  background-color: #717171;
+}
+
+/* Fading animation */
+.fade {
+  animation-name: fade;
+  animation-duration: 3s;
+}
+
+.slider > img {
+    opacity: 0.6;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .0}
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .0}
+  to {opacity: 1}
+}
+
+/* ------ PROMO ------ */
+
+.promo3 > h1 {
+    text-align: center;
+    color: #E3B64F;
+}
+
+.promo {
+  width: 341.33334px;
+  height: 341.33334px;
+  float: left;
+  position: relative;
+  color: #fff;
+}
+
+  .promo2 {
+    width: 341.33334px;
+    height: 341.33334px;
+    float: left;
+    filter: alpha(opacity=30);
+    transition-duration: 0.5s;
+  }
+  
+  .gamba {
+      background: transparent url(../img/promo/promo1.png) no-repeat 0 0;
+      background-size: 341.33334px 341.33334px;
+  }
+  
+  .escamarlan {
+      background: transparent url(../img/promo/promo2.png) no-repeat 0 0;
+      background-size: 341.33334px 341.33334px;
+  }
+  
+  .olla {
+      background: transparent url(../img/promo/promo3.png) no-repeat 0 0;
+      background-size: 341.33334px 341.33334px;
+  }
+  
+  .promo2:hover {
+      opacity: 0;
+      transition-duration: 0.5s;
+  }
+
+  .promo3 {
+    z-index: -1;
+    background: #F8E4AF;
+    position: absolute;
+    width: 341.33334px;
+    height: 341.33334px;
+  }
+  
+/* ------ NAVBAR ------ */
+
+nav {
+    z-index: 1;
+    overflow: hidden;
+    position: fixed;
+    height: 50px;
+    width: 1024px;
+    transition: all 0.6s ease-out;
+}
+
+.navcell{
+    float: right;
+    display: block;
+    color: white;
+    font-weight: bold;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.navcell {
+    display: inline-block;
+    position: relative;
+    padding-bottom: 3px;
+}
+.navcell:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 3px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+.navcell:hover:after {
+    width: 100%;
+    background: white;
+}
+
+.scrolled {
+    background: white;
+}
+
+.scrolled .navcell{
+    color:black;
+}
+
+/* ------ FOOTER ------ */
+
+.contact {
+	background-color:#6E6E6E;
+	width:100%;
+	float:left;
+    padding: 40px 0px 50px 0px;
+}
+
+.contact-info {
+	float:left;
+	padding-left:100px;
+	margin-bottom:50px;
+
+}
+
+.weather {
+	float:left;
+	width:50.2%;
+	margin-left:120px;
+}
+
+#c_40716f2cb58f8c38bc6297a0c8736cba{
+	margin-top:10px;
+}
+
+.contact h2{
+	text-align:center;
+	color:#FAAC58;
+	border-bottom: solid 2px;
+	padding-top:15px;
+}
+
+.copyright, .contact h4, p{
+	color:white;
+}
+
+.contact iframe {
+	margin-top:10px;
+}
+
+.copyright {
+	width:100%;
+	float:left;
+    padding: 15px 0px;
+	text-align:center;
+    background-color:darkslategray;
+}
+
+.copyright p{
+	font-size:16px;
+}
+
+/* -- lightbox -- */
+
+.lightbox {
+
+	display: none;
+	position: fixed;
+        z-index: 4;
+	width: 100%;
+	height: 100%;
+	text-align: center;
+	top: 0;
+	left: 0;
+	background: rgba(0,0,0,0.8);
+}
+
+.general > a {
+	text-decoration: none;
+}
+
+.lightbox img {
+
+	max-width: 90%;
+	max-height: 80%;
+	margin-top: 8%;
+}
+
+.lightbox:target {
+
+	outline: none;
+	display: block;
+}
+
+/*****************************************CARTA*************************/
+
+#Carta{
+   background: white;
+   width:100%;
+   height:700px;
+
+}
+#Carta  h2{
+	padding-top: 20px;
+    	padding-left: 20px;
+	text-decoration: underline;
+	color:black;
+	font-family: 'Acme', sans-serif;
+	BACKGROUND: white;
+	margin-left:50px;
+
+}
+#cartax{
+	float:left;
+
+	width:auto;
+}
+
+#cartax ul {
+    list-style-type: none;
+    width: 250px;
+    font-size: 11pt;
+}
+#cartax ul li a {
+    color: #6E6E6E;
+    font-family: 'Acme', sans-serif;
+    text-decoration: none;
+    text-transform: uppercase;
+    display: block;
+    text-align:left;
+    padding: 10px 10px 30px 20px;
+    font-size: 20px;
+}
+
+#presentacio{
+	width:700px;
+	height:auto;
+	float:Left;
+}
+
+#presentacio p {
+	color:#C7C2C2;
+	font-family: 'Acme', sans-serif;
+	margin: 0px !important;
+	padding:4px;
+	font-size: 20px;
+
+	
+}
+.general{
+	text-align:center;
+	color:#FAAC5;
+	font-family: 'Acme', sans-serif;
+}
+.general h1{
+	font-size:30pt;
+	/*padding-bottom:10px;*/
+	text-decoration: underline;
+	font-family: 'Acme', sans-serif;
+	color:#6E6E6E;
+	
+}
+.general h3 {
+	color:#6E6E6E;
+	font-family: 'Acme', sans-serif;
+	text-align:center;
+	margin: 0px !important;
+	padding-top: 20px;
+
+}
+.amm{
+	float:left;
+
+}
+/*
+.general p {
+	color:color:white;
+	font-family: Andale Mono,AndaleMono,monospace;
+	text-align:center;
+}
+*/
+/************* -- MAPS API -- ****************/
+
+#map_API { 
+    height: 25%;
+    width: 514px;
+    position: absolute;
+    
+}
+#map_englober{
+    height: 285px;
+}
+.controls {
+  margin-top: 10px;
+  border: 1px solid transparent;
+  border-radius: 2px 0 0 2px;
+  box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  height: 32px;
+  outline: none;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+#origin-input,
+#destination-input {
+  background-color: #fff;
+  font-family: Roboto;
+  font-size: 15px;
+  font-weight: 300;
+  margin-left: 12px;
+  padding: 0 11px 0 13px;
+  text-overflow: ellipsis;
+  width: 200px;
+}
+
+#origin-input:focus,
+#destination-input:focus {
+  border-color: #4d90fe;
+}
+
+#mode-selector {
+  color: #fff;
+  background-color: #4d90fe;
+  margin-left: 12px;
+  padding: 5px 11px 0px 11px;
+}
+
+#mode-selector label {
+  font-family: Roboto;
+  font-size: 13px;
+  font-weight: 300;
+}
+
+/********* -- DESPLEGABLE -- ************/
+
+#Videos{
+    height: 100%;
+    background-color: #464040;
+    padding-left: 27px;
+    padding-right: 27px;
+}
+
+#img_casas, #img_restaurante{
+    height: 210px;
+    width: 440px;
+}
+
+#img_casas{
+    float: right;
+}
+
+#titulo{
+    margin-top: 0px;
+    padding-top: 15px;
+}
+#contenido_escondido{
+    display: none;
+
+}
+#contenido_visible, #contenido_escondido{
+    height: 100%;
+    padding-bottom: 15px;
+}
+#boton_accion{
+    height: 19px;
+    width: 30px;
+    margin-left: 48%;
+    padding-bottom: 8px;
+    padding-top: 8px;
+}
+
+/******** ------ WEATHER API ------********/
+
+.currently-weather {
+    height: 114px;
+    background-color: #fff;
+}
+
+.today {
+    position: relative;
+    overflow: hidden;
+    /* min-height: 200px; */
+    background: #3D6AA2;
+}
+
+.today > article {
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.today > figure {
+    background-image: url(../img/weather/background.jpg);
+    margin: 0;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-position: center;
+    background-size: cover;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+.temp {
+    font-size: 73px;
+    font-weight: bold;
+}
+/*------------------------------MENUS--------------------*/
+p, h3{
+        text-align: center;
+    }
+    #menus{
+        background-color:white;
+    }
+#menu h2 {
+    margin:0px;
+}
+
+#menu{
+padding:10px;
+}
+
+
+    .tab {
+        list-style-type: none;
+        margin: 0;
+        padding: 0;
+        overflow: hidden;
+        border: 1px solid #ccc;
+        background-color: #f1f1f1;
+    }
+
+    /* Float the list items side by side */
+    .tab li {
+        float: left;
+        width: 16.6666666%;
+        text-align: center;
+        padding-top:10px;
+        padding-bottom:10px;
+    }
+
+    /* Style the links inside the list items */
+    .tab li a {
+        display: inline-block;
+        color: black;
+        text-decoration: none;
+        transition: 0.3s;
+        font-size: 17px;
+    }
+
+    /* Change background color of links on hover */
+    .tab li:hover {
+        background-color: #ddd;
+    }
+
+    /* Create an active/current tablink class */
+    .tab li:focus, .active {
+        background-color: #ccc;
+    }
+
+    .menuElement{
+        float:left;
+    }
+
+    #menu h2{
+        text-align: center;
+    }
+
+    .menuElement h4,.menuElement p{
+        text-align: center;
+    }
+
+    .menuElement{
+        width:20%
+    }
+    
+.menuElement p{
+    margin:0px;
+    padding-top:5px;
+    padding-bottom:5px;
+    color:black;
+
+}
+    #downloadIcon:hover{
+        mask-image: linear-gradient(rgba(1, 1, 1, 3), transparent);
+    }

@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+
+    <meta charset="UTF-8" />
+    <title>La Bona mar mola mucho</title>
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://fonts.googleapis.com/css?family=Acme" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./src/videos.css">
+    <link id="pagestyle" rel="stylesheet" type="text/css" href="">
+    <link href="https://fonts.googleapis.com/css?family=Montserrat" rel="stylesheet">
+    <link rel="icon" type="image/png" href="img/favicon.png" />
+
+</head>
+
+<body>
+
+    <div class="container">
+
+        <header id="Home">
+
+            <div id="topSuccessMessage" class="alert-success alerta">
+            </div>
+
+            <nav id="navbar">
+                <a class="navcell" onclick="scrollTo('Horarios')" href="#">HORARIOS</a>
+                <a class="navcell" onclick="scrollTo('Palamos')" href="#">PALAMOS</a>
+                <a class="navcell" onclick="scrollTo('Historia')" href="#">HISTORIA</a>
+                <a class="navcell" onclick="scrollTo('Carta')" href="#">CARTA</a>
+                <a class="navcell" onclick="scrollTo('Promos')" href="#">PROMOCIONES</a>
+                <a class="navcell" onclick="scrollTo('Home')" href="#">HOME</a>
+            </nav>
+
+            <!-- SLIDER -->
+            <div class="slider-container">
+                <div class="slider fade">
+                    <img src="img/slider/slider1.png" alt="restaurant">
+                </div>
+                <div class="slider fade">
+                    <img src="img/slider/slider2.png" alt="restaurant">
+                </div>
+                <div class="slider fade">
+                    <img src="img/slider/gourmet2.jpg" alt="restaurant">
+                </div>
+                <div class="slider fade">
+                    <img src="img/slider/slider4.jpg" alt="restaurant">
+                </div>
+                <div class="slider-dot">
+                    <span class="dot" onclick="currentSlide(1)"></span>
+                    <span class="dot" onclick="currentSlide(2)"></span>
+                    <span class="dot" onclick="currentSlide(3)"></span>
+                    <span class="dot" onclick="currentSlide(4)"></span>
+                </div>
+            </div>
+
+        </header>
+
+        <section id="Promos">
+            <div class="promo">
+                <div class="promo2 gamba">
+                </div>
+                <div class="promo3">
+                    <h1>MENU GAMBA</h1>
+                </div>
+
+            </div>
+            <div class="promo">
+                <div class="promo2 escamarlan">
+                </div>
+                <div class="promo3">
+                    <h1>MENU ESCAMARLAN</h1>
+                </div>
+
+            </div>
+            <div class="promo">
+                <div class="promo2 olla">
+                </div>
+                <div class="promo3">
+                    <h1>MENU OLLA</h1>
+                </div>
+
+            </div>
+        </section>
+
+        <section id="Carta">       
+            <!--<a href="#img1">
+                <img src="./img/testImages/cervantin.jpg" class="thumbnail">
+            </a>-->
+            <h2>La Nostra Carta</h2>        
+	    <article id="contenido_carta">
+		<div id="cartax">
+			<ul>
+				<li class="menu"><a id="amanides" href="javascript:void(0)" title="...">Les nostres Amanides</a></li>
+				<li class="menu"><a id="carns" href="javascript:void(0)" title="...">Les nostres Carns </a></li>
+				<li class="menu"><a id="peixos" href="javascript:void(0)" title="...">Els Peixos </a></li>
+				<li class="menu"><a id="arrossos "href="javascript:void(0)" title="...">Especialitats d&#39Arrossos i Pastes</a></li>
+				<li class="menu"><a id="postres" href="javascript:void(0)" title="...">Postres</a></li>
+				<li class="menu"><a id="sugerencias" href="javascript:void(0)" title="...">Alguns Suggeriments </a></li>
+			</ul>
+		</div>	
+		<div id="presentacio">
+				<div class="inici">
+					<p>
+						El Restaurant La Bona Mar és un restaurant que ofereix un ampli i variat menú i lespecialitat és el menjar del mar.
+
+						El nostre personal és idoni i té una àmplia experiència en la preparació dels més coneguts plats del nostre país i 
+						també de l&#39estranger. Utilitzem els millors ingredients per obtenir els més deliciosos plats que seran el delit de tots vostès.
+					</p>
+				</div>
+				<div class="amanides general">
+							
+							<h1>Amanides</h1>
+							
+				<a href="#img1"><h3 class="thumbnail" route="./img/testImages/cesar.png"><img class="amm" src="./img/testImages/cesar.png"width="70" height="70" />Amanida Caeser</h3></a>							
+							<p>Servida amb rúcula , pinyons , pit de pollastre , crustóns i tomaquet.</p>							
+							
+							<h3>Amanida de fruites</h3>
+							
+							<p>Servida amb enciam , formatge blau , presseg , nectarina i suc de llima.</p>
+							
+							<h3>Amanida Marilyn</h3>
+							
+							<p>Servida amb rúcula, tomaqet , ceba , nous i vinagreta de mel.</p>
+							
+							<h3>Amanida Audrey</h3>
+							
+							<p>Servida amb rúcula, carxofa ,vinagreta de poma.</p>
+				</div>
+				<div class="carns general">					
+					
+						<h1>Carns</h1>
+							
+						<h3>Filet de vadella</h3>
+									
+						<h3>Entrecot</h3>
+								
+						<h3>Anec </h3>
+																	 
+						<h3>Entranya</h3>
+
+					</div>
+					<div class="peixos general">
+				
+						<h1>Peixos</h1>
+							
+						<h3>Llubarro a la brasa</h3>		
+									
+						Bacallà amb tomaquet
+								
+						Salmó fumat 
+																	 
+						Lluç a la marinera
+						</p>						
+					
+					</div>
+					
+					<div class="arrossos general">
+						<h1>Arrossos i Pastes</h1>
+						
+						<h3>Arròs amb vedures i ou</h3>	
+						
+						Arròs caldós 
+						
+						Risotto negre amb musclos
+						
+						Raviolis amb mus de foie	
+					</div>
+					
+					<div class="postres general">
+						<h1>Postres</h1>	
+						
+						<h3>CheeseCake</h3>	
+						
+						Brownie
+						
+						Flan de formatge
+						
+						Trufes
+					</div>
+					
+					<div class="sugerencias general">
+						<p>SSugerenciassss - Els sugerim els plats del dia blalbalbla , que estan fets amb blablalbla  ja que son especials en temporada de balbalbla..</p>
+					</div>
+		</div>
+           </article>
+        </section>
+
+        <section id="Videos">
+			<h2 id="titulo">Història de Palamós</h2>
+			<article id="contenido_visible">
+				<img id="img_casas" src="img/testImages/costapalamos.jpg">
+                <p>
+					Lorem ipsum dolor sit amet, at prompta insolens necessitatibus nam. Esse argumentum sit mola et, meis elitr possit est ut. Delicata qualisque eos et, qui et vero accusam officiis. Et eam labitur argumentum elaboraret, semper doctus omnesque ne eum. Habeo altera mucius an sit, eos no nulla elitr oportere. Ex diam facilisis mel, no vero prompta eripuit sit.
+					Has lorem torquatos te. Cetero albucius assueverit et mea, his laboramus scribentur ad. Cu mel meliore disputando, harum accusam deterruisset ad pri, sanctus mandamus nec ut. No falli ubique quo.
+					Cu facilis philosophia sit, ne recteque necessitatibus nec.
+				</p>
+            </article>
+            <article id="contenido_escondido">
+                <div class="video-general">
+	<div class="video-container">
+		<div id="main-video" class="main-video">
+			
+		</div>
+		<!--Para cambiar los videos de youtube hay que poner un tag img con class="videoThumbnail" y src="http://img.youtube.com/vi/[ID_DEL_VIDEO_AQUI]/0.jpg" -->
+		<!-- Para cambiar los videos guardados internamente se deben generar previamente el thumbnail y el video. Estos tienen que estar en la carpeta ./videos. Los archivos de thumbnail y video deben llamarse igual (con diferentes formatos) y usar extension .PNG-->
+		<div class="secondaryVideoContainer">
+			<div id="nextIconLeft" class="nextIconLeft"><p class="LeftRightArrow"><</p></div>
+			<div class="secondaryVideoThumbnails">
+				<div class="wideVideoContainter">
+					<div id="video1" class="secondary-video">
+						<img class="videoThumbnail" src="http://img.youtube.com/vi/6_AGMHWWv3c/0.jpg"/>
+					</div>
+					<div id="video2" class="secondary-video">
+						<img class="videoThumbnail" src="http://img.youtube.com/vi/6Iv4bFkVllQ/0.jpg"/>
+					</div>
+					<div id="video3" class="secondary-video">
+						<img class="videoThumbnail secondary-video-internal" src="./videos/palamos1.PNG"/>
+					</div>
+					<div id="video4" class="secondary-video">
+						<img class="videoThumbnail" src="http://img.youtube.com/vi/DTGvC_cgq-Q/0.jpg"/>
+					</div>
+					<div id="video5" class="secondary-video">
+						<img class="videoThumbnail" src="http://img.youtube.com/vi/DTGvC_cgq-Q/0.jpg"/>
+					</div>
+				</div>
+			</div>
+            <div class="nextIconRight"><p class="LeftRightArrow">></p></div>
+		</div>
+	</div>
+</div>
+	    </article>
+            <img id="boton_accion" src="img/arrow.png" />
+		</section>
+<section id="menus">
+<ul class="tab">
+        <li onclick="openMenu('Dilluns')"><a href="javascript:void(0)" class="tablinks" id="defaultOpen">Dilluns</a></li>
+        <li onclick="openMenu('Dimarts')"><a href="javascript:void(0)" class="tablinks">Dimarts</a></li>
+        <li onclick="openMenu('Dimecres')"><a href="javascript:void(0)" class="tablinks">Dimecres</a></li>
+        <li onclick="openMenu('Dijous')"><a href="javascript:void(0)" class="tablinks">Dijous</a></li>
+        <li onclick="openMenu('Divendres')"><a href="javascript:void(0)" class="tablinks">Divendres</a></li>
+        <li onclick="openMenu('FinDe')"><a href="javascript:void(0)" class="tablinks">Cap de Setmana</a></li>
+    </ul>
+    <div id="menu"></div>
+</section>
+        <footer id="Horarios">
+            <div class="contact">
+                <div class="contact-info">
+                    <h2>Horario</h2>
+                    <h4>Martes a viernes</h4>
+                    <p>Mañana: De 13:00 a 17:00</p>
+                    <p>Tarde: De 20:00 a 01:00</p>
+                    <h4>Sabado a Domingo</h4>
+                    <p>Mañana: De 13:00 a 17:00</p>
+                    <p>Tarde: De 20:00 a 02:00</p>
+
+                    <h2>Contacto</h2>
+                    <h4>Restaurante la Bona Mar</h4>
+                    <p>Carrer / De la Creu , 22</p>
+                    <p>Palamós, CP: 17230</p>
+                    <p>Giorna (CAT)</p>
+                    <p>Teléfono: 972 310 000</p>
+ 
+                    <!-- Trigger/Open The Modal -->
+                    <button class="btn btn-info" id="myBtn">Open Modal</button>
+
+                    <!-- The Modal -->
+                    <div id="myModal" class="modal">
+
+                        <!-- Modal content -->
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <span class="close">&times</span>
+                                <h2>Modal Header</h2>
+                            </div>
+                            <div class="modal-body">
+                                <form action="mailto:alex.puertas96@gmail.com" method="post" enctype="text/plain">
+                                    Name:<br>
+                                    <input type="text" name="name"><br>
+                                    E-mail:<br>
+                                    <input type="text" name="mail"><br>
+                                    Comment:<br>
+                                    <input type="text" name="comment" size="50"><br><br>
+                                    <input type="submit" value="Send">
+                                    <input type="reset" value="Reset">
+                                </form>
+                            </div>
+                            <div class="modal-footer">
+                                <h3>Modal Footer</h3>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+                <div class="weather">
+
+                    <div id="map_englober">
+                        <h2>Mapa</h2>
+                        <input id="origin-input" class="controls" type="text" placeholder="Lugar de localización" />
+                        <input id="destination-input" class="controls" type="text" placeholder="Lugar de destino" />
+                        <div id="map_API"></div>
+                    </div>
+
+                    <div id="weather_api">
+                        <h2>El tiempo en Palamos</h2>
+                        <div class="currently-weather">
+                            <div class="today">
+                                <article>
+                                    <div class="info-today">
+                                        <div class="today-text">TODAY</div>
+                                        <div class="temp">0°</div>
+                                        <div class="wind">0 km/h</div>
+                                    </div>
+                                    <div class="icon-weather"></div>
+                                </article>
+                                <figure></figure>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+            <div class="copyright">
+                <p>Restaurante la Mar Bona , 1926 since 2016. Web disgned by Sednas Studios</p>
+                <p>All rights reserved ©</p>
+            </div>
+        </footer>
+
+    </div>
+    <script src="https://code.jquery.com/jquery-1.10.2.js"></script>
+   
+    <script src="./src/videos.js"></script>
+<script type="text/javascript" src="src/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyARgN6dESw6-AER_3y7QBv78ywwO7R6_dM&signed_in=true&libraries=places&callback=initMap"
+     async defer></script> 
+</body>
+</html>
